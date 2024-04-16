@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Consultar CEP</title>
+</head>
+<body>
+    <h1>Consultando CEP</h1>
+
+    <form id="busca-cep">
+        <input type="text" id="cep" placeholder="Digite seu CEP" onblur="consultaCep()">
+        <input type="text" id="logradouro" placeholder="Logradouro" disabled>
+        <input type="text" id="numero" placeholder="Número" disabled>
+        <input type="text" id="compl" placeholder="Complemento" disabled>
+        <input type="text" id="bairro" placeholder="Bairro" disabled>
+        <input type="text" id="localidade" placeholder="Cidade" disabled>
+        <input type="text" id="uf" placeholder="Estado" disabled>
+
+        <button type='button' onclick="limparCampos()">Limpar</button>
+    </form>
+
+    <script src="/scripts.js"></script>
+</body>
+</html>
